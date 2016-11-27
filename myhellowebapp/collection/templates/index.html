@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %}
+   Homepage - {{block.super}}
+{% endblock title %}
+
+{% block content %}
+  <h1>Hello World! </h1>
+  <!-- <p>I am a basic website. </p> -->
+  <!-- here is the variable we are passing in -->
+  <!--<p>{{ number }} </p> -->
+  <!--<p>There are {{number}} song{{number|pluralize}} ! </p> -->
+  <p>There are {{number|apnumber}} songs ! </p>
+  <p>This is song name: {{song}} </p>
+ {% endblock content %}   
